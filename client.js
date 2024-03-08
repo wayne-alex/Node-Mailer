@@ -1,8 +1,8 @@
 const axios = require("axios");
 
 const emailData = {
-  name: "Face Recognition",
-  to: "waynealex9914@gmail.com",
+  name: "Company Name",
+  to: "example@email.com",
   subject: "Test Email",
   html_message: "<p>Hello, this is a test email!</p>",
 };
