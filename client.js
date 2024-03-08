@@ -8,7 +8,7 @@ const emailData = {
 };
 
 axios
-  .post("http://localhost:456/send-email", emailData, {
+  .get("https://node-mailer-brown.vercel.app", emailData, {
     headers: {
       "Content-Type": "application/json",
     },
