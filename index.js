@@ -21,7 +21,7 @@ app.post("/send-email", (req, res) => {
   const emailData = req.body;
 
   const mailOptions = {
-    from: emailData.name + "<thegrandmaster254@gmail.com>",
+    from: emailData.name + "<madarakatech@gmail.com>",
     to: emailData.to,
     subject: emailData.subject,
     html: emailData.html_message,
