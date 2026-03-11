@@ -20,12 +20,12 @@ const transporter = nodemailer.createTransport({
 app.post("/send-email", (req, res) => {
   const emailData = req.body;
 
-  const mailOptions = {
-    from: emailData.name + "<madarakatech@gmail.com>",
-    to: emailData.to,
-    subject: emailData.subject,
-    html: emailData.html_message,
-  };
+ const mailOptions = {
+  from: `"${emailData.name}" <madarakatech@gmail.com>`,
+  to: emailData.to,
+  subject: emailData.subject,
+  html: emailData.html_message,
+};
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
